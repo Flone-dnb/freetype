@@ -73,9 +73,9 @@
 #ifdef LLONG_MIN
 #define FT_LLONG_MIN   LLONG_MIN
 #endif
-#ifdef ULLONG_MAX
+/*#ifdef ULLONG_MAX
 #define FT_ULLONG_MAX  ULLONG_MAX
-#endif
+#endif*/
 
 
   /**************************************************************************

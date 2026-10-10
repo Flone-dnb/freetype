@@ -65,11 +65,11 @@ FT_BEGIN_HEADER
 #ifndef FT_SIZEOF_LONG_LONG
 
   /* The size of a `long long` type if available */
-#if defined( FT_ULLONG_MAX ) && FT_ULLONG_MAX >= 0xFFFFFFFFFFFFFFFFULL
+/*#if defined( FT_ULLONG_MAX ) && FT_ULLONG_MAX >= 0xFFFFFFFFFFFFFFFFULL
 #define FT_SIZEOF_LONG_LONG  ( 64 / FT_CHAR_BIT )
-#else
+#else*/
 #define FT_SIZEOF_LONG_LONG  0
-#endif
+/*#endif*/
 
 #endif /* !defined(FT_SIZEOF_LONG_LONG) */
 

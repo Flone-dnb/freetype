@@ -1036,7 +1036,7 @@
 
 #define TT_MulFix14( a, b )  TT_MulFix14_64( a, b )
 
-  static inline FT_F26Dot6
+  static FT_F26Dot6
   TT_MulFix14_64( FT_F26Dot6  a,
                   FT_F2Dot14  b )
   {
@@ -1055,7 +1055,7 @@
 
 #define TT_MulFix14  TT_MulFix14_arm
 
-  static __inline FT_Int32
+  static FT_Int32
   TT_MulFix14_arm( FT_Int32  a,
                    FT_Int32  b )
   {
@@ -1103,7 +1103,7 @@
 
   /* documentation is in freetype.h */
 
-  static __inline FT_Int32
+  static FT_Int32
   TT_MulFix14_i386( FT_Int32  a,
                      FT_Int32  b )
   {
@@ -1186,7 +1186,7 @@
 #ifdef FT_INT64
 
   /* compute (ax*bx+ay*by)/2^14 with maximum accuracy and rounding */
-  static inline FT_F26Dot6
+  static FT_F26Dot6
   TT_DotFix14( FT_F26Dot6  ax,
                FT_F26Dot6  ay,
                FT_F2Dot14  bx,
@@ -1202,7 +1202,7 @@
 
 #else
 
-  static inline FT_F26Dot6
+  static FT_F26Dot6
   TT_DotFix14( FT_F26Dot6  ax,
                FT_F26Dot6  ay,
                FT_F2Dot14  bx,

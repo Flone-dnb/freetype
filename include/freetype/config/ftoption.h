@@ -165,7 +165,7 @@ FT_BEGIN_HEADER
    * If your compiler is not C99-compliant or CPU assembly is not supported,
    * you can disable this option.
    */
-#define FT_CONFIG_OPTION_INLINE_MULFIX
+/*#define FT_CONFIG_OPTION_INLINE_MULFIX*/
 
 
   /**************************************************************************

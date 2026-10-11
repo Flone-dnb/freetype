@@ -2041,7 +2041,7 @@
       FT_ULong  max_offset = 0;
 
 
-      if ( stream->limit - stream->cursor < gvar_head.glyphCount * 4 )
+      if ( (size_t)(stream->limit - stream->cursor) < gvar_head.glyphCount * 4 )
       {
         FT_TRACE2(( "ft_var_load_gvar:"
                     " glyph variation data offset not enough\n" ));
@@ -2079,7 +2079,7 @@
       FT_ULong  max_offset = 0;
 
 
-      if ( stream->limit - stream->cursor < gvar_head.glyphCount * 2 )
+      if ( (size_t)(stream->limit - stream->cursor) < gvar_head.glyphCount * 2 )
       {
         FT_TRACE2(( "ft_var_load_gvar:"
                     " glyph variation data offset not enough\n" ));

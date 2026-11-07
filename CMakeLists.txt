@@ -118,7 +118,7 @@
 
 # CMake 3.12 provides for IMPORTED targets for common libraries like
 # zlib, libpng, and bzip2.
-cmake_minimum_required(VERSION 3.12...3.31.0)
+cmake_minimum_required(VERSION 2.8.12)
 
 include(CheckIncludeFile)
 include(CMakeDependentOption)
@@ -618,10 +618,10 @@ endif ()
 # 'freetype-interface' is an interface library, to be accessed with
 # `EXPORT_NAME Freetype::Freetype`.  This is the target name provided
 # by CMake's `FindFreetype.cmake`, so we provide it for compatibility.
-add_library(freetype-interface INTERFACE)
-set_target_properties(freetype-interface PROPERTIES
-  EXPORT_NAME Freetype::Freetype
-  INTERFACE_LINK_LIBRARIES freetype)
+#add_library(freetype-interface INTERFACE)
+#set_target_properties(freetype-interface PROPERTIES
+#  EXPORT_NAME Freetype::Freetype
+#  INTERFACE_LINK_LIBRARIES freetype)
 
 set(PKGCONFIG_REQUIRES "")
 set(PKGCONFIG_REQUIRES_PRIVATE "")
